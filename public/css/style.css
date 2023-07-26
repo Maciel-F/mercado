@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #EAC926;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.logo{
+    padding: 10px;
+    width: 50%;
+}
+.search-bar{
+    background-color: white;
+    color: #666;
+    border:solid 1px black;
+}
+.lupa{
+    background-color: white;
+    border:solid 1px black;
+}
+.metodo{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.burger-menu{
+    background-color: #1259c3;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    width: 20px;
+    border-radius: 3px;
+}
+h2{
+    font-size: 24px;
+    text-align: left;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.otros{
+    font-size: 16px;
+    color: green;
+    width: 70%;
+}
+.descripcion{
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0%;
+    margin-top: 15px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
+.icon-footer{
+    color:#1259c3;
+    font-size: 2em;
+}
+main{
+    width: 90%;
+    margin:auto;
+    text-align: center;
+}
+article{
+    background-color: white;
+    margin: 15px 0px;
+}
+.separador{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.camion{
+    color: green;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main section article > img{
+    width: 100%;
+}
+.logo-serch{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 11px;
+    width: 50%;
+}
+.descripcion:hover{
+    opacity: 100%;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.camion:hover{
+    animation: truck-rotacion 3s 1;
+}
+@keyframes truck-rotacion{
+    100%{
+        rotate: -90deg;
+    }
+}
+@media(min-width: 577px){
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .productos article{
+        width:47%;
+    }
+    
+}
+@media(min-width: 993px){
+    .productos article{
+        width:23%;
+    }
+}
+

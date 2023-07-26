@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register MercadoLiebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href = "/css/register.css" rel = "stylesheet">
+</head>
+<body>
+<header>
+        <div class="logo-serch">
+        <div class="logo">
+            <img src="/images/logo-mercado-liebre.svg" alt="no pudo cargar imagen">
+        </div>
+    <div class="buscador">
+            <span class = "search-bar"> Buscar productos, marcas </span>
+        <span class="lupa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+    </div>
+            <div class="metodo"><i class="fa-solid fa-hand-holding-dollar" style="color: #000000;"></i> Comprá en cuotas y sin tarjeta de crédito </div>
+        </div>
+</header>
+<section class="formulario">
+    <form action="/" method="post">
+        <label for="Nombre y apellido">Nombre y apellido</label>
+            <input class="controles" type="text" name="nombre" id="Nombre y apellido">
+
+        <label for="Nombre de usuario">Ingresar Nombre de Usuario</label>
+            <input class="controles" type="text" name="nombreUsuario" id="Nombre de usuario">
+
+        <label for="Fecha de nacimiento">Ingresar Fecha de nacimiento</label>
+            <input class="controles" type="date" value="2002/04/04" id="Fecha de nacimiento">
+
+        <label for="Domicilio">Ingrese su Domicilio</label>
+            <input class="controles" type="text" name="Domicilio" id="Domicilio">
+        
+        <label>Usted la usara para</label>
+            <input  type="radio" name="usabilidad" value="Comprar">Comprar
+            <input  type="radio" name="usabilidad" value="Vender">Vender
+    <div class="box">
+        <label for="Categorías de interés">Categorías de interés</label>
+        <input  type="checkbox" name="eleccion" value="Electro">Electro
+        <input  type="checkbox" name="eleccion" value="Moda">Moda
+        <input  type="checkbox" name="eleccion" value="Hogar">Hogar
+        <input  type="checkbox" name="eleccion" value="Juguetería">Juguetería
+        <input  type="checkbox" name="eleccion" value="Vida Sana">Vida Sana
+    </div>
+
+        <label>Seleccionar una foto para el perfil</label>
+        <input class="controles" type="file" name="perfil" accept=".jpg, .png">
+
+        <label for="Contraseña">Contraseña</label>
+        <input class="controles" type="password" name="Contraseña" id="Contraseña">
+
+        <label for="confirmar contraseña">Confirmar Contraseña</label>
+        <input class="controles" type="password" name="confirm" id="confirmar contraseña">
+
+        <button class="boton" type="submit">Enviar</button>
+        <button class="boton" type="reset">Borrar</button>
+</form>
+</section>
+</body>
+</html>
