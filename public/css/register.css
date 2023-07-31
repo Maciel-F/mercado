@@ -54,7 +54,21 @@ header{
     border-radius: 4px;
     margin-bottom: 16px;
 }
-.boton:hover{
-    background-color: #0022AA;
-
+.boton{
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
 }
+.boton2{
+    width: 100%;
+    color:black;
+}
+.boton:hover{
+    background: #0022AA;
+    color: white;
+}
+.boton2:hover{
+    background: red;
+    color: white;
+}
+
