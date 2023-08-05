@@ -29,41 +29,46 @@
 
 <section class="formulario">
     <form action="/" method="post">
-        <label for="Nombre y apellido">Nombre y apellido</label>
-            <input class="controles" type="text" name="nombre" id="Nombre y apellido">
 
-        <label for="Nombre de usuario">Ingresar Nombre de Usuario</label>
-            <input class="controles" type="text" name="nombreUsuario" id="Nombre de usuario">
+            <input class="controles" type="text" name="nombre" placeholder="Nombre y Apellido">
 
-        <label for="Fecha de nacimiento">Ingresar Fecha de nacimiento</label>
-            <input class="controles" type="date" value="2002/04/04" id="Fecha de nacimiento">
+            <input class="controles" type="text" name="nombreUsuario" placeholder="Ingresar Nombre de Usuario">
 
-        <label for="Domicilio">Ingrese su Domicilio</label>
-            <input class="controles" type="text" name="Domicilio" id="Domicilio">
+            <h2>Ingresar Fecha de nacimiento</h2>
+
+        <input class="controles" type="date" value="2002/04/04" id="fecha">
+
+            <input class="controles" type="text" name="Domicilio" placeholder="Ingrese su Domicilio">
         
-        <label>Usted la usara para</label>
-            <input  type="radio" name="usabilidad" value="Comprar">Comprar
-            <input  type="radio" name="usabilidad" value="Vender">Vender
-    <div class="box">
-        <label for="Categorías de interés">Categorías de interés</label>
-        <input  type="checkbox" name="eleccion" value="Electro">Electro
-        <input  type="checkbox" name="eleccion" value="Moda">Moda
-        <input  type="checkbox" name="eleccion" value="Hogar">Hogar
-        <input  type="checkbox" name="eleccion" value="Juguetería">Juguetería
-        <input  type="checkbox" name="eleccion" value="Vida Sana">Vida Sana
-    </div>
+        <h2>Usted la usara para</h2>
+        <section class="radio">
+            <div>
+            <input  type="radio" name="usabilidad" value="Comprar"> &nbsp;&nbsp;Comprar</div>
+            <div>
+            <input  type="radio" name="usabilidad" value="Vender"> &nbsp;&nbsp;Vender</div>
+        </section>
+    <h2>Categoria de internet</h2>
+    <section>
+        <div class="controles"><input type="checkbox" name="eleccion" value="Electro"> &nbsp;&nbsp;Electro</div>
+        <div class="controles"><input  type="checkbox" name="eleccion" value="Moda"> &nbsp;&nbsp;Moda</div>
+        <div class="controles"><input  type="checkbox" name="eleccion" value="Hogar"> &nbsp;&nbsp;Hogar</div>
+        <div class="controles"><input  type="checkbox" name="eleccion" value="Juguetería"> &nbsp;&nbsp;Juguetería</div>
+        <div class="controles"><input  type="checkbox" name="eleccion" value="Vida Sana"> &nbsp;&nbsp;Vida Sana</div>
+    </section>
 
-        <label>Seleccionar una foto para el perfil</label>
+        <h2>Seleccionar una foto para el perfil</h2>
+
         <input class="controles" type="file" name="perfil" accept=".jpg, .png">
 
-        <label for="Contraseña">Contraseña</label>
-        <input class="controles" type="password" name="Contraseña" id="Contraseña">
+        <h2>Contraseña</h2>
 
-        <label for="confirmar contraseña">Confirmar Contraseña</label>
-        <input class="controles" type="password" name="confirm" id="confirmar contraseña">
+        <input class="controles" type="password" name="Contraseña" placeholder="Contraseña">
 
+        <input class="controles" type="password" name="confirm" placeholder="Confirmar Contraseña">
+    <section>
         <button class="boton" type="submit">Enviar</button>
         <button class="boton2" type="reset">Borrar</button>
+    </section>
 </form>
 </section>
 </body>

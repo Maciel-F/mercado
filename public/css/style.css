@@ -26,11 +26,6 @@ header{
     background-color: white;
     border:solid 1px black;
 }
-.metodo{
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
 a{
     text-decoration: none;
     color: black;
@@ -71,10 +66,14 @@ ul{
 footer{
     background-color: white;
     text-align: center;
+    padding-top: 15px;
 }
-.icon-footer{
+footer section i{
     color:#1259c3;
     font-size: 2em;
+}
+footer section p{
+    padding-bottom: 10px;
 }
 main{
     width: 90%;
@@ -93,6 +92,7 @@ article{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .camion{
     color: green;
@@ -115,13 +115,13 @@ main section article > img{
     display: flex;
     flex-wrap: wrap;
     padding: 4%;
+    align-items: center;
+    justify-content: center;
 }
 .buscador{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    font-size: 11px;
     width: 50%;
+    text-align: center;
+    font-size: 13px;
 }
 .descripcion:hover{
     opacity: 100%;
@@ -131,6 +131,9 @@ article:hover{
 }
 .camion:hover{
     animation: truck-rotacion 3s 1;
+}
+body header nav > ul{
+    display: none;
 }
 @keyframes truck-rotacion{
     100%{
@@ -148,11 +151,64 @@ article:hover{
     .productos article{
         width:47%;
     }
-    
+    body header nav > ul{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .metodo{
+        font-size: 12px;
+        text-align: center;
+    }
+    .logo-serch{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .enlaces{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 45%;
+    }
+    .registro{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 45%;
+    }
+    .otros{
+        text-align: center;
+    }
 }
 @media(min-width: 993px){
     .productos article{
         width:23%;
+    }
+    .logo{
+        width: 30%;
+    }
+    .metodo{
+        width: 30%;
+    }
+    footer{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+    }
+    footer section{
+        width: 30%;
+    }
+    .copy{
+        width: 100%;
+    text-align: left;
+    margin-top: 30px;
     }
 }
 
